@@ -47,7 +47,7 @@ void graph_add_edge(graph_t *graph, graph_vertex_t u, graph_vertex_t v) {
 	if((u > 0 && u <= graph->V) && (v > 0 && v <= graph->V)) {
     	graph_node_t *w = (graph_node_t*)malloc(sizeof(struct graph_node));
 
-		/* Directed graph. */
+	/* Directed graph. */
     	if(w != NULL) {
       		w->vertex = v;
       		w->next = graph->adjlist[u - 1];
@@ -139,7 +139,7 @@ void dfs(graph_t *graph, graph_vertex_t u, int **aux) {
 	    if(aux[COLOR][adj - 1] == WHITE){
 	    	dfs(graph, adj, aux);
 		}
-		/* If a back-edge was found a cycle was detected */
+		/* If a back-edge was found a cycle was detected. */
 		 else if (aux[COLOR][adj - 1] == GRAY){
 			printf("Incoerente\n");
 			exit(EXIT_SUCCESS);
