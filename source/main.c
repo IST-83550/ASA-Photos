@@ -9,14 +9,14 @@ int main() {
 	int V, E;
 	graph_t *graph;
 
-	/* reads number of vertexs and edges */
+	/* Reads number of vertexs and edges. */
 	assert(scanf("%d %d", &V, &E) == 2);
  	assert(V > 0 && E > 0);
 
  	graph = graph_new(V);
  	assert(graph != NULL);
 
-	/* reads edges */
+	/* Reads edges. */
  	while(E-- > 0) {
 		int u, v;
 		assert(scanf("%d %d", &u, &v) == 2);
