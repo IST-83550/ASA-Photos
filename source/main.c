@@ -18,9 +18,9 @@ int main() {
 
 	/* reads edges */
  	while(E-- > 0) {
-    	int u, v;
-    	assert(scanf("%d %d", &u, &v) == 2);
-    	graph_add_edge(graph, u, v);
+		int u, v;
+		assert(scanf("%d %d", &u, &v) == 2);
+		graph_add_edge(graph, u, v);
 	}
 
 	dfs_main(graph);
