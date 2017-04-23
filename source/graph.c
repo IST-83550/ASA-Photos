@@ -106,11 +106,11 @@ void dfs_main(graph_t *graph) {
          it's not an hamiltonian path for the graph. */
 		if(flag == false){
 			printf("Insuficiente\n");
-			
-	        free(aux[DATA]);
-	        free(aux[COLOR]);
-	        free(aux);
-	        graph_free(graph);			
+
+	        	free(aux[DATA]);
+	        	free(aux[COLOR]);
+	        	free(aux);
+	        	graph_free(graph);			
 			exit(EXIT_SUCCESS);
 		}
 	}
